@@ -1,0 +1,196 @@
+.site-section-form {
+    padding: 100px 0;
+}
+
+.form__background {
+    background-image: url('/local/templates/mech/assets/img/form/bg-form.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.site__form {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 15px 45px rgba(35, 31, 32, 0.1), 0px 10px 30px rgba(35, 31, 32, 0.1);
+    box-shadow: 0px 15px 45px rgba(35, 31, 32, 0.1), 0px 10px 30px rgba(35, 31, 32, 0.1);
+    border-radius: 2px;
+    padding: 60px;
+}
+
+.mech__form {
+    margin-top: 15px;
+}
+
+.mech__form--item {
+    margin: 15px 0;
+    position: relative;
+}
+
+.mech__simple-form--item {
+    margin: 15px 0;
+    position: relative;
+}
+
+.mech__form--FIO::before {
+    position: absolute;
+    content: url('data:image/svg+xml;charset=utf-8, <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10 13C12.7614 13 15 10.3137 15 7C15 3.68629 12.7614 1 10 1C7.23858 1 5 3.68629 5 7C5 10.3137 7.23858 13 10 13Z" stroke="%2352C5D7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/> <path d="M17.7 18.5C16 17.9 13 17 10 17C7 17 4 17.9 2.3 18.5C1.5 18.8 1 19.5 1 20.4V23H10H19V20.4C19 19.5 18.5 18.8 17.7 18.5Z" stroke="%2352C5D7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/> </svg>');
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 23px;
+    height: 24px;
+    width: 20px;
+}
+
+.mech__form--PHONE::before {
+    position: absolute;
+    content: url('data:image/svg+xml;charset=utf-8, <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12.6667 23H3.33333C2.05 23 1 22.1 1 21V3C1 1.9 2.05 1 3.33333 1H12.6667C13.95 1 15 1.9 15 3V21C15 22.1 13.95 23 12.6667 23Z" stroke="%2352C5D7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/> <path d="M7 5H9" stroke="%2352C5D7" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path d="M8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20Z" fill="%2352C5D7"/> </svg>');
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 25px;
+    height: 24px;
+    width: 16px;
+}
+
+.mech__form--EMAIL::before {
+    position: absolute;
+    content: url('data:image/svg+xml;charset=utf-8, <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M21 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1H21C22.1 1 23 1.9 23 3V15C23 16.1 22.1 17 21 17Z" stroke="%2352C5D7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/> <path d="M1.59998 1.5L12 9L22.4 1.5" stroke="%2352C5D7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/> <path d="M12 9L1.70001 16.5" stroke="%2352C5D7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/> </svg>');
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 21px;
+    height: 18px;
+    width: 24px;
+}
+
+.mech__form--MESSAGE::before {
+    position: absolute;
+    content: url('data:image/svg+xml;charset=utf-8, <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12 9C12.5523 9 13 8.55228 13 8C13 7.44772 12.5523 7 12 7C11.4477 7 11 7.44772 11 8C11 8.55228 11.4477 9 12 9Z" fill="%2352C5D7"/> <path d="M16 9C16.5523 9 17 8.55228 17 8C17 7.44772 16.5523 7 16 7C15.4477 7 15 7.44772 15 8C15 8.55228 15.4477 9 16 9Z" fill="%2352C5D7"/> <path d="M8 9C8.55228 9 9 8.55228 9 8C9 7.44772 8.55228 7 8 7C7.44772 7 7 7.44772 7 8C7 8.55228 7.44772 9 8 9Z" fill="%2352C5D7"/> <path d="M21 1H3C1.9 1 1 1.9 1 3V13C1 14.1 1.9 15 3 15H12L16 19V15H21C22.1 15 23 14.1 23 13V3C23 1.9 22.1 1 21 1Z" stroke="%2352C5D7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/> </svg>');
+    top: 21px;
+    right: 21px;
+    height: 20px;
+    width: 24px;
+}
+
+.mech__simple-form--item input[type="email"],
+.mech__simple-form--item input[type="date"],
+.mech__simple-form--item input[type="text"] {
+    border-radius: 2px;
+    width: 100%;
+    outline: none;
+    height: 50px;
+    border: 1px solid rgba(82, 197, 215, 0.35);
+    padding: 15px;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.7);
+    background: transparent;
+}
+
+.mech__simple-form--item input[type="email"]:hover,
+.mech__simple-form--item input[type="text"]:hover,
+.mech__simple-form--item input[type="email"]:focus,
+.mech__simple-form--item input[type="date"]:focus,
+.mech__simple-form--item input[type="text"]:focus {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.mech__form--item input[type="email"],
+.mech__form--item input[type="date"],
+.mech__form--item input[type="text"] {
+    border: 1px solid rgba(5, 57, 65, .15);
+    border-radius: 2px;
+    width: 100%;
+    outline: none;
+    height: 60px;
+    padding: 21px 55px 21px 19px;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(5, 57, 65, .35);
+}
+
+.mech__form--item textarea {
+    border: 1px solid rgba(5, 57, 65, .15);
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 100%;
+    outline: none;
+    padding: 21px 55px 21px 19px;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-appearance: none;
+    line-height: 1.2;
+    min-height: 210px;
+    resize: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(5, 57, 65, .35);
+}
+
+.fancybox-modal .form__success p {
+    color: #FFFFFF !important;
+}
+
+.mech__form--item input[type="email"]:hover,
+.mech__form--item input[type="date"]:hover,
+.mech__form--item input[type="text"]:hover,
+.mech__form--item textarea:hover {
+    border: 1px solid rgba(5, 57, 65, .5);
+    color: rgba(5, 57, 65, .5);
+}
+
+.mech__form--item input[type="email"]:focus,
+.mech__form--item input[type="date"]:focus,
+.mech__form--item input[type="text"]:focus,
+.mech__form--item textarea:focus {
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 26, 39, 0.15);
+    box-shadow: 0px 5px 15px rgba(0, 26, 39, 0.15);
+    background: #FFFFFF;
+    color: #001A27;
+}
+
+
+.mech__form--item input[type="email"]:disabled,
+.mech__form--item input[type="date"]:disabled,
+.mech__form--item input[type="text"]:disabled,
+.mech__form--item textarea:disabled {
+    background: #F2F4F6;
+    border-radius: 5px;
+    color: rgba(0, 26, 39, .35);
+    border: 1px solid transparent;
+}
+
+.fancybox-slide--html {
+    padding: 0!important;
+}
+
+@media all and (max-width: 767px) {
+    .site__form {
+        padding: 30px 30px;
+    }
+
+    .h2.form__h2 {
+        margin-bottom: 15px;
+    }
+}
+

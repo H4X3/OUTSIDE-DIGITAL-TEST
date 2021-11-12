@@ -1,0 +1,108 @@
+.button {
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, .35);
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: bold;
+    border-radius: 4px;
+    position: relative;
+    margin: 0;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: transparent;
+    outline: none;
+    text-decoration: none !important;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.button-small {
+    font-size: 13px;
+    letter-spacing: 0.07em;
+    padding: 22px 29px;
+}
+
+.button-medium {
+    font-size: 15px;
+    letter-spacing: 0.07em;
+    padding: 21px 28px;
+}
+
+.button-submit, .button-gradient {
+    color: #FFFFFF;
+    background: -o-linear-gradient(344.88deg, #007F91 0%, #007F91 33%, #52C5D7 66%, #007F91 100%);
+    background: linear-gradient(105.12deg, #007F91 0%, #007F91 33%, #52C5D7 66%, #007F91 100%);
+    border: none;
+    background-size: 300%;
+    background-position-x: 100%;
+}
+
+.button-azure {
+    background-color: #52C5D7;
+    color: #FFFFFF;
+    border: none;
+}
+
+
+
+.btn-wide {
+    width: 100%;
+}
+
+@media all and (min-width: 992px) {
+
+    .button-azure:hover {
+        background: #59ACB7;
+        -webkit-box-shadow: 0px 10px 30px rgba(5, 57, 65, 0.15);
+        box-shadow: 0px 10px 30px rgba(5, 57, 65, 0.15);
+    }
+
+    .button-white:hover {
+        background: #59ACB7;
+        -webkit-box-shadow: 0px 10px 30px rgba(5, 57, 65, 0.15);
+        box-shadow: 0px 10px 30px rgba(5, 57, 65, 0.15);
+        border: 1px solid transparent;
+    }
+
+    .button-dashed:hover, .button-file:hover, .button-green:hover {
+        -webkit-box-shadow: 0px 10px 30px rgba(5, 57, 65, 0.1), 0px 10px 15px rgba(5, 57, 65, 0.1);
+        box-shadow: 0px 10px 30px rgba(5, 57, 65, 0.1), 0px 10px 15px rgba(5, 57, 65, 0.1);
+        border: 1px solid transparent;
+    }
+
+    .button-submit:hover, .button-gradient:hover {
+        background-position-x: 0%;
+        -webkit-box-shadow: 0px 5px 15px rgba(0, 127, 145, .35);
+        box-shadow: 0px 5px 15px rgba(0, 127, 145, .35);
+    }
+}
+
+@media all and (max-width: 767px) {
+    .button {
+        width: 100%;
+    }
+    .button__more {
+        padding: 22px 15px;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 374px) {
+    .button {
+        white-space: normal;
+    }
+}

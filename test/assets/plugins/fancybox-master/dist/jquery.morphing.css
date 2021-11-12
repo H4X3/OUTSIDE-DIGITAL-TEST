@@ -1,0 +1,118 @@
+/* fancyMorph */
+
+.morphing-btn-wrap {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.morphing-btn {
+  -webkit-transition: color 0.2s 0.3s, width 0.2s 0s;
+  -moz-transition: color 0.2s 0.3s, width 0.2s 0s;
+  -o-transition: color 0.2s 0.3s, width 0.2s 0s;
+  transition: color 0.2s 0.3s, width 0.2s 0s;
+  white-space: nowrap;
+  will-change: width, color;
+  transform: translate3d(0, 0, 0);
+}
+
+.morphing-btn_circle {
+  color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  width: 35.6px !important; /* Override inline style rule */
+  -webkit-transition: color 0.2s 0s, width .3s 0.2s;
+  -moz-transition: color 0.2s 0s, width .3s 0.2s;
+  -o-transition: color 0.2s 0s, width .3s 0.2s;
+  transition: color 0.2s 0s, width .3s 0.2s;
+}
+
+.morphing-btn-clone {
+  position: fixed;
+  background: #FF6666;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  z-index: 3;
+  font-size: 0.875em;
+  -webkit-transition: all 0.6s cubic-bezier(.65,.05,.36,1);
+  -moz-transition: all 0.6s cubic-bezier(.65,.05,.36,1);
+  -o-transition: all 0.6s cubic-bezier(.65,.05,.36,1);
+  transition: all 0.6s cubic-bezier(.65,.05,.36,1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.morphing-btn-clone_visible {
+  -webkit-transform : scale(1) !important;
+  -moz-transform : scale(1)  !important;
+  -ms-transform : scale(1) !important;
+  -o-transform : scale(1)  !important;
+  transform : scale(1) !important;
+
+}
+
+.morphing-close {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  background: rgba(0,0,0,0.2);
+  text-indent: -9999px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0;
+  overflow: hidden;
+  transition: background-color 0.2s ease 0s, transform .2s ease-in-out;;
+  z-index: 99993;
+  cursor: pointer;
+  outline: none;
+}
+
+.morphing-close:active {
+  margin-top: -1px;
+}
+
+.morphing-close:before,
+.morphing-close:after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 24px;
+  width: 26px;
+  height: 1.5px;
+  background: #fff;
+}
+
+.morphing-close:before {
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.morphing-close:after {
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+#site-menu-morph {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  width: 100%;
+  line-height: 2;
+  z-index: 1000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: inherit;
+  background-color: #404e53;
+  color: white;
+}

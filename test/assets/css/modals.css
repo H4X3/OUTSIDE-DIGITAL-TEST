@@ -1,0 +1,244 @@
+.fancybox-modal {
+    border: 2px solid #52C5D7;
+    box-sizing: border-box;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    z-index: 999999;
+}
+
+.modal {
+    overflow: hidden;
+}
+
+.fancybox-bg {
+    background: #053941 !important;
+    opacity: 1 !important;
+}
+
+.fancybox-bg--modals {
+    background: -o-linear-gradient(341.54deg, #007F91 0.01%, #005C69 100.34%);
+    background: linear-gradient(108.46deg, #007F91 0.01%, #005C69 100.34%);
+    opacity: 1 !important;
+}
+
+#modal__dev .mech-modal__form {
+    background: -o-linear-gradient(341.54deg, #007f91 0.01%, rgb(0, 92, 115) 100.34%);
+    background: linear-gradient(108.46deg, #007f91 0.01%, rgb(0, 92, 115) 100.34%);
+}
+
+.fancybox-modal-large {
+    width: 1000px;
+    margin: 50px 0 !important;
+}
+
+.fancybox-modal-big {
+    width: 700px;
+}
+
+.fancybox-modal-medium {
+    width: 570px;
+}
+
+.fancybox-modal-small {
+    width: 530px;
+}
+
+.fancy-gallery .fancybox-close-small {
+    top: 18px;
+    right: 28px;
+    padding: 12px;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+}
+
+.fancybox-close-text {
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.mech-modal__form {
+    padding: 50px;
+}
+
+.modal__title {
+    margin-top: 0 !important;
+    margin-bottom: 17px !important;
+}
+
+
+.modal__descr {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    opacity: .7;
+}
+
+.mech-modal__form--btn {
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+.mech-modal__policy {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.mech-modal__form--btn input[type="submit"] {
+    width: 100% !important;
+}
+
+.fancybox-close-small {
+    opacity: 1;
+}
+
+.mech-modal__form--item {
+    margin: 15px 0;
+    position: relative;
+}
+
+.mech-modal__form--FIO::before {
+    position: absolute;
+    content: url('/local/templates/mech/components/bitrix/form/modal-form/bitrix/form.result.new/.default/img/people-icon.svg');
+    /*content: url('data:image/svg+xml;charset=utf-8, <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10 13C12.7614 13 15 10.3137 15 7C15 3.68629 12.7614 1 10 1C7.23858 1 5 3.68629 5 7C5 10.3137 7.23858 13 10 13Z" stroke="%2352C5D7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/> <path d="M17.7 18.5C16 17.9 13 17 10 17C7 17 4 17.9 2.3 18.5C1.5 18.8 1 19.5 1 20.4V23H10H19V20.4C19 19.5 18.5 18.8 17.7 18.5Z" stroke="%2352C5D7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/> </svg>');*/
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 23px;
+    height: 24px;
+    width: 20px;
+}
+
+.mech-modal__form--PHONE::before {
+    position: absolute;
+    content: url('/local/templates/mech/components/bitrix/form/modal-form/bitrix/form.result.new/.default/img/phone-icon.svg');
+    /*content: url('data:image/svg+xml;charset=utf-8, <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12.6667 23H3.33333C2.05 23 1 22.1 1 21V3C1 1.9 2.05 1 3.33333 1H12.6667C13.95 1 15 1.9 15 3V21C15 22.1 13.95 23 12.6667 23Z" stroke="%2352C5D7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/> <path d="M7 5H9" stroke="%2352C5D7" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path d="M8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20Z" fill="%2352C5D7"/> </svg>');*/
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 25px;
+    height: 24px;
+    width: 16px;
+}
+
+.mech-modal__form--item input[type="email"],
+.mech-modal__form--item input[type="date"],
+.mech-modal__form--item input[type="text"] {
+    border: 1px solid rgba(82, 197, 215, .35);
+    background: transparent;
+    border-radius: 2px;
+    width: 100%;
+    outline: none;
+    height: 60px;
+    padding: 21px 55px 21px 19px;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, .7);
+}
+
+.mech-modal__form--item input[type="email"]:hover,
+.mech-modal__form--item input[type="text"]:hover,
+.mech-modal__form--item input[type="date"]:hover,
+.mech-modal__form--item textarea:hover {
+    border: 1px solid rgba(82, 197, 215, .5);
+    color: rgba(255, 255, 255, .9);
+}
+
+.mech-modal__form--item input[type="email"]:focus,
+.mech-modal__form--item input[type="text"]:focus,
+.mech-modal__form--item input[type="date"]:focus,
+.mech-modal__form--item textarea:focus {
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 26, 39, 0.15);
+    box-shadow: 0px 5px 15px rgba(0, 26, 39, 0.15);
+    background: #FFFFFF;
+    color: #001A27;
+}
+
+.fancybox-close-small svg * {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.fancybox-close-small:hover svg * {
+    stroke: #FFFFFF;
+}
+
+
+
+.cross {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-image: url('data:image/svg+xml;utf8, <svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L13 13M13 1L1 13" stroke="%2352C5D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+input[type="date"]:before {
+    position: absolute;
+    top: calc(50% + 7px);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 18px;
+    content: attr(data-date);
+    display: inline-block;
+    font-size: 30px;
+    line-height: 1;
+    color: #47c1ef;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 20px;
+    background: url(/local/templates/ostdesign/assets/img/calendar.svg) no-repeat center;
+    width: 100%;
+    height: 100%;
+    background-position: right center;
+    outline: none;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.modal-error {
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
