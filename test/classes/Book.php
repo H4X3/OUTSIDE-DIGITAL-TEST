@@ -153,4 +153,5 @@ class Book
         $sql = "UPDATE genre SET name=? WHERE id=?";
         self::$connection->prepare($sql)->execute([$data['name'], $data['id']]);
     }
+
 }

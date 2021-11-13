@@ -45,6 +45,7 @@ class Author
 
     public static function deleteAuthor($id)
     {
+        self::deleteAuthorsBooksID($id);
         $sql = "DELETE FROM authors WHERE id={$id}";
         self::$connection->prepare($sql)->execute();
     }
@@ -56,6 +57,14 @@ class Author
         }
 
         $sql = "INSERT INTO authors_books (isbn, author_id) VALUES" . implode($arSql, ', ');
+        self::$connection->prepare($sql)->execute();
+    }
+
+    public static function deleteAuthorsBooksID($id) {
+        $sql = "DELETE FROM authors_books WHERE author_id={$id}";
+        echo "<pre>";
+        print_r($sql);
+        echo "</pre>";
         self::$connection->prepare($sql)->execute();
     }
 
