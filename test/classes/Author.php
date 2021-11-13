@@ -62,9 +62,6 @@ class Author
 
     public static function deleteAuthorsBooksID($id) {
         $sql = "DELETE FROM authors_books WHERE author_id={$id}";
-        echo "<pre>";
-        print_r($sql);
-        echo "</pre>";
         self::$connection->prepare($sql)->execute();
     }
 

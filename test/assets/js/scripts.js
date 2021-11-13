@@ -284,7 +284,7 @@ $(document).ready(function () {
             url: '/ajax/ajax.php',
             data: { action: 'delete', id: id, table: table },
             success: function (response) {
-                // location.reload();
+                location.reload();
             }
         });
 
